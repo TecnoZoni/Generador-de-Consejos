@@ -10,8 +10,8 @@ const traerFrase = () => {
             const advice = device.slip.advice;
 
             //Le digo donde mostrar la informacion
-            document.getElementById('adviceID').textContent = adviceID;
-            document.getElementById('advice').textContent = advice;
+            document.getElementById('adviceID').textContent = "ADVICE #" + adviceID;
+            document.getElementById('advice').textContent = '"' + advice + '"';
         })
         .catch(error => {
             console.log('Error', error);
